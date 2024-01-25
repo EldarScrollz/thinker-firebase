@@ -1,0 +1,38 @@
+@use "../../global-styles/globals";
+
+.post-edit-text-title{
+    background-color: rgba(0, 0, 0, 0.349);
+    color: globals.$fontColor-important2;
+    resize: none;
+    height: 12vh;
+    width: 90%;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+.post-edit-text-description{
+    background-color: rgba(0, 0, 0, 0.349);
+    color: globals.$fontColor-basic;
+    resize: none;
+    height: 43vh;
+    width: 100%;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+.post-edit-text-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+
+    .post-edit-text-buttons-apply{
+        background-color: rgb(33, 108, 83);
+        font-weight: bold;
+        border-radius: 0;
+    }
+
+    .post-edit-text-buttons-cancel{
+        background-color: rgb(108, 33, 33);
+        font-weight: bold;
+        border-radius: 0;
+    }
+}

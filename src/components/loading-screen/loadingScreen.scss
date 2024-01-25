@@ -1,0 +1,18 @@
+@use "../../pages/Global-styles/globals";
+
+.loading-screen {
+    opacity: 1;
+    background: radial-gradient(circle, transparent -85%, #282c34 18%, #282c34 77%, transparent 112%, transparent), radial-gradient(circle, transparent -19%, #282c34 21%, #282c34 80%, transparent 80%, transparent) 30px 30px, linear-gradient(#efefef 1.4px, transparent 2.4px) 0 -1.2px, linear-gradient(90deg, #efefef 1.4px, #282c34 2.4px) -1.2px 0;
+    background-size: 60px 60px, 60px 60px, 30px 30px, 30px 30px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 997;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

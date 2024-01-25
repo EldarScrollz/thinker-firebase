@@ -1,0 +1,70 @@
+@use "../Global-styles/globals";
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(1rem, 93vw, 47rem);
+    height: 98vh;
+    margin: 1em auto 0;
+
+    .createForm-title {
+        color: globals.$fontColor-basic;
+        background-color: #282c34;
+        text-align: center;
+        width: 100%;
+        height: 10vh;
+        padding: .6em .9em;
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: bold;
+        border: solid globals.$borderColor1;
+    }
+
+    .createForm-error {
+        color: globals.$fontColor-error;
+        font-size: clamp(.1rem, 3.4vw, 1.5rem);
+        margin: .4em 0em 0em;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    textarea {
+        color: globals.$fontColor-basic;
+        resize: none;
+        background-color: globals.$backColor1;
+        height: 65%;
+        width: 100%;
+        padding: 1em;
+        margin-top: .4em;
+        border: solid globals.$borderColor1;
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        text-align: justify;
+    }
+
+    input[type=submit] {
+        padding: .5em 1em;
+        margin-top: .4em;
+        background: #3f8149;
+        color: globals.$fontColor-important;
+        border: 0 none;
+        border-radius: 1em;
+        font-size: clamp(1rem, 6vw, 1.9rem);
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: inset 0 0 100px 100px rgb(53, 150, 66);
+        }
+    }
+}
+
+
+
+@media only screen and (width >=42.5em) {
+    .createForm {
+        height: min(46rem, 52vw);
+
+        textarea {
+            height: 40rem;
+        }
+    }
+}
