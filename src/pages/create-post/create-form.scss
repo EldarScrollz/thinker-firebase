@@ -5,16 +5,21 @@
     flex-direction: column;
     align-items: center;
     width: clamp(1rem, 93vw, 47rem);
-    height: 98vh;
+    height: 89vh;
     margin: 1em auto 0;
 
     .createForm-title {
         color: globals.$fontColor-basic;
         background-color: #282c34;
         text-align: center;
+        
         width: 100%;
-        height: 10vh;
-        padding: .6em .9em;
+        // height: 10vh;
+        // height: min(5rem, 12vw);
+        height: min(7rem, 25vw);
+
+        // padding: 1rem .5rem;
+        padding: 1rem 0.5rem 0rem 0.5rem;
         font-size: clamp(1rem, 5vw, 2rem);
         font-weight: bold;
         border: solid globals.$borderColor1;
@@ -32,7 +37,7 @@
         color: globals.$fontColor-basic;
         resize: none;
         background-color: globals.$backColor1;
-        height: 65%;
+        height: 100%;
         width: 100%;
         padding: 1em;
         margin-top: .4em;
@@ -61,10 +66,14 @@
 
 @media only screen and (width >=42.5em) {
     .createForm {
-        height: min(46rem, 52vw);
+        // height: min(46rem, 52vw);
+
+        .createForm-title {
+            min-height: 4.6rem;
+        }
 
         textarea {
-            height: 40rem;
+            // height: 40rem;
         }
     }
 }
